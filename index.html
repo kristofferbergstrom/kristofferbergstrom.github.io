@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+      Welcome
+    </title>
+	<style>
+	@keyframes anim { 
+	100% { -webkit-transform: rotate(360deg);
+		transform:rotate(360deg); 
+		} 
+	}
+	@keyframes anim2 { 
+	100% { -webkit-transform: rotate(-360deg);
+		transform:rotate(-360deg); 
+		} 
+	}
+	body{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	background: rgb(165, 174, 185) none repeat scroll 0% 0%;
+	}
+	#hello{
+	width:100%;
+	margin: 200px auto 0px; 
+	font-size: 20vmin; 
+	text-align: center; 
+	color: rgb(223, 155, 33);
+	animation:anim 4s linear infinite 1500ms;
+	-webkit-animation:anim 4s linear infinite 1500ms;
+    -moz-animation:anim 4s linear infinite 1500ms;
+	}
+	
+	span{
+	animation:anim2 6s linear infinite 3s;
+	-webkit-animation:anim2 6s linear infinite 3s;
+    -moz-animation:anim2 6s linear infinite 3s;
+	display:inline-block;
+	}
+	</style>
+  <script type="text/javascript">
+    var srand = function(){return Math.floor((Math.random() * (255 - 1)) + 1); }
+    var eyehurt = function(){
+      document.body.style.background="rgb("+srand()+","+srand()+","+srand()+")";
+      document.getElementById("hello").style.color = "rgb("+srand()+","+srand()+","+srand()+")";
+    }
+    setInterval(eyehurt, 100)  
+    
+  </script>
+    
+  </head>
+  <body style="">
+    <main>
+     <div id="hello">
+        <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+      </h1>
+  
+</main></body></html>
